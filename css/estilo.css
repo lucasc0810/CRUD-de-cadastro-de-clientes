@@ -1,0 +1,15 @@
+.fundo {
+	width: 500px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: #cecece;
+}
+
+table {
+	margin: 0 auto;
+	font-family: Arial;	
+}
+
+h2 {
+	text-align: center;
+}

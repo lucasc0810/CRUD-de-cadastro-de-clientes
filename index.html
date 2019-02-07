@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head> 
+		<meta charset="UTF-8">
+		<title>Cadastro de clientes</title>	
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">	
+
+	</head>
+	<body>
+		<div class="fundo">
+			<h2> Cadastrar usuário </h2>
+			<form action="acao.php" method="POST">
+				<table>
+					<tr>
+						<td>Nome:</td> <td><input type="text" name="nometxt"/></td>
+					</tr>	
+					<tr>
+						<td>Data de nascimento:</td> <td><input type="text" name="datatxt"/></td>
+					</tr>	
+					<tr>
+						<td>CPF:</td> <td><input type="text" name="cpftxt"/></td>
+					</tr>	
+					<tr>
+						<td><input type="submit" value="Cadastrar"/></td>
+					</tr>						
+				</table>
+			</form>		
+		</div>
+
+		<div class="fundo"> 
+			<h2> Pesquisar usuário </h2>
+			<form method="POST" action="pesquisar.php">
+				Pesquisar:<input type="text" name="pesquisar" placeholder="PESQUISAR"/>
+				<input type="submit" value="OK">
+			</form>
+		</div>	
+
+		<div class="fundo"> 
+			<h2> Apagar usuário </h2>
+			<form method="POST" action="apagar.php">
+				<input type="text" name="apagar" placeholder="Digite nome/ nascimento/ cpf"/>
+				<input type="submit" value="OK">
+			</form>
+		</div>		
+
+	</body>
+</html>
